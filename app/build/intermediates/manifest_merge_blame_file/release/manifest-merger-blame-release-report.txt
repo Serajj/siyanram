@@ -1,0 +1,947 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.siyaram.apps"
+4    android:versionCode="18"
+5    android:versionName="4.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml
+10
+11    <uses-feature android:name="android.hardware.camera.autofocus" />
+11-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:135:5-70
+11-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:135:19-67
+12    <uses-feature android:name="android.hardware.camera" />
+12-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:137:5-60
+12-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:137:19-57
+13
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:138:5-65
+14-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:138:22-62
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:139:5-71
+15-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:139:22-68
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:140:5-66
+16-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:140:22-63
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:141:5-79
+17-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:141:22-76
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:142:5-67
+18-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:142:22-64
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:144:5-81
+19-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:144:22-78
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:25:5-68
+20-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:25:22-65
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:27:5-81
+21-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:27:22-78
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+22-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:28:5-77
+22-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:28:22-74
+23    <permission
+23-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:7:5-9:47
+24        android:name="com.siyaram.apps.permission.C2D_MESSAGE"
+24-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:8:9-63
+25        android:protectionLevel="signature" />
+25-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:9:9-44
+26
+27    <uses-permission android:name="com.siyaram.apps.permission.C2D_MESSAGE" />
+27-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:11:5-79
+27-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:11:22-76
+28    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- START: ShortcutBadger -->
+28-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:17:5-82
+28-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:17:22-79
+29    <!-- Samsung -->
+30    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+30-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:31:5-86
+30-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:31:22-83
+31    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+31-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:32:5-87
+31-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:32:22-84
+32    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+32-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:33:5-81
+32-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:33:22-78
+33    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+33-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:34:5-83
+33-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:34:22-80
+34    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+34-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:35:5-88
+34-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:35:22-85
+35    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+35-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:36:5-92
+35-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:36:22-89
+36    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+36-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:37:5-84
+36-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:37:22-81
+37    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+37-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:38:5-83
+37-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:38:22-80
+38    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+38-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:39:5-91
+38-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:39:22-88
+39    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+39-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:40:5-92
+39-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:40:22-89
+40    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+40-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:41:5-93
+40-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:41:22-90
+41    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+41-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:42:5-73
+41-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:42:22-70
+42    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+42-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:43:5-82
+42-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:43:22-79
+43    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+43-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:44:5-83
+43-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:44:22-80
+44    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+44-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:45:5-88
+44-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:45:22-85
+45    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+45-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:46:5-89
+45-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:46:22-86
+46
+47    <application
+47-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:6:5-134:19
+48        android:name="com.verbosetech.weshare.application.BaseApplication"
+48-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:7:9-52
+49        android:allowBackup="true"
+49-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:8:9-35
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.1.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/f3803188b059fc3339f9bc6b70650b1f/core-1.1.0/AndroidManifest.xml:24:18-86
+51        android:icon="@mipmap/ic_launcher_siyanram"
+51-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:9:9-52
+52        android:label="@string/app_name"
+52-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:10:9-41
+53        android:requestLegacyExternalStorage="true"
+53-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:11:9-52
+54        android:roundIcon="@mipmap/ic_launcher_siyanram_round"
+54-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:12:9-63
+55        android:supportsRtl="true"
+55-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:13:9-35
+56        android:theme="@style/AppTheme"
+56-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:14:9-40
+57        android:usesCleartextTraffic="true" >
+57-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:15:9-44
+58        <activity android:name="com.verbosetech.weshare.activity.CategoryActivity" />
+58-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:17:9-72
+58-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:17:19-60
+59        <activity android:name="com.verbosetech.weshare.activity.WebViewActivity" />
+59-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:18:9-62
+59-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:18:19-59
+60        <activity
+60-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:19:9-21:46
+61            android:name="com.verbosetech.weshare.activity.EditOptionActivity"
+61-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:20:13-56
+62            android:theme="@style/MyTheme" />
+62-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:21:13-43
+63        <activity android:name="com.verbosetech.weshare.activity.AddDetailActivity" />
+63-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:22:9-64
+63-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:22:19-61
+64        <activity android:name="com.verbosetech.weshare.activity.PaymentActivity" />
+64-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:23:9-62
+64-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:23:19-59
+65        <activity
+65-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:24:9-27:48
+66            android:name="com.facebook.FacebookActivity"
+66-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:25:13-57
+67            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+67-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:26:13-96
+68            android:label="@string/app_name"
+68-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:27:13-45
+69            android:theme="@style/com_facebook_activity_theme" />
+69-->[com.facebook.android:facebook-common:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/673b4b511e34641c474f6ca9126e2e07/jetified-facebook-common-5.13.0/AndroidManifest.xml:32:13-63
+70        <activity
+70-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:28:9-39:20
+71            android:name="com.facebook.CustomTabActivity"
+71-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:29:13-58
+72            android:exported="true" >
+72-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:30:13-36
+73            <intent-filter>
+73-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:31:13-38:29
+74                <action android:name="android.intent.action.VIEW" />
+74-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:32:17-69
+74-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:32:25-66
+75
+76                <category android:name="android.intent.category.DEFAULT" />
+76-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:34:17-76
+76-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:34:27-73
+77                <category android:name="android.intent.category.BROWSABLE" />
+77-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:35:17-78
+77-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:35:27-75
+78
+79                <data android:scheme="@string/fb_login_protocol_scheme" />
+79-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:37:17-75
+79-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:37:23-72
+80            </intent-filter>
+81        </activity>
+82        <activity
+82-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:40:9-63:20
+83            android:name="com.verbosetech.weshare.activity.SplashScreenActivity"
+83-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:41:13-58
+84            android:screenOrientation="portrait"
+84-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:42:13-49
+85            android:theme="@style/Splash"
+85-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:43:13-42
+86            android:windowSoftInputMode="stateHidden" >
+86-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:44:13-54
+87            <intent-filter>
+87-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:45:13-49:29
+88                <action android:name="android.intent.action.MAIN" />
+88-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:46:17-69
+88-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:46:25-66
+89
+90                <category android:name="android.intent.category.LAUNCHER" />
+90-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:48:17-77
+90-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:48:27-74
+91            </intent-filter>
+92            <intent-filter android:autoVerify="true" >
+92-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:50:13-62:29
+92-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:50:28-53
+93                <action android:name="android.intent.action.VIEW" />
+93-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:32:17-69
+93-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:32:25-66
+94
+95                <category android:name="android.intent.category.DEFAULT" />
+95-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:34:17-76
+95-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:34:27-73
+96                <category android:name="android.intent.category.BROWSABLE" />
+96-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:35:17-78
+96-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:35:27-75
+97
+98                <data
+98-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:37:17-75
+99                    android:host="@string/dynamic_link_domain"
+99-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:57:21-63
+100                    android:scheme="http" />
+100-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:37:23-72
+101                <data
+101-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:37:17-75
+102                    android:host="@string/dynamic_link_domain"
+102-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:57:21-63
+103                    android:scheme="https" />
+103-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:37:23-72
+104            </intent-filter>
+105        </activity>
+106        <activity
+106-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:64:9-67:55
+107            android:name="com.verbosetech.weshare.activity.MainActivity"
+107-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:65:13-50
+108            android:screenOrientation="portrait"
+108-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:66:13-49
+109            android:windowSoftInputMode="adjustPan" />
+109-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:67:13-52
+110        <activity
+110-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:68:9-70:52
+111            android:name="com.verbosetech.weshare.activity.SettingsActivity"
+111-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:69:13-54
+112            android:screenOrientation="portrait" />
+112-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:70:13-49
+113        <activity
+113-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:71:9-74:55
+114            android:name="com.verbosetech.weshare.activity.DetailHomeItemActivity"
+114-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:72:13-60
+115            android:screenOrientation="portrait"
+115-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:73:13-49
+116            android:windowSoftInputMode="adjustPan" />
+116-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:74:13-52
+117        <activity
+117-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:75:9-78:70
+118            android:name="com.verbosetech.weshare.activity.UserProfileDetailActivity"
+118-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:76:13-63
+119            android:screenOrientation="portrait"
+119-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:77:13-49
+120            android:windowSoftInputMode="stateHidden|adjustResize" />
+120-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:78:13-67
+121        <activity
+121-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:79:9-82:70
+122            android:name="com.verbosetech.weshare.activity.FollowerFollowingActivity"
+122-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:80:13-63
+123            android:screenOrientation="portrait"
+123-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:81:13-49
+124            android:windowSoftInputMode="stateHidden|adjustResize" />
+124-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:82:13-67
+125        <activity
+125-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:83:9-86:70
+126            android:name="com.verbosetech.weshare.activity.FeedbackActivity"
+126-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:84:13-54
+127            android:screenOrientation="portrait"
+127-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:85:13-49
+128            android:windowSoftInputMode="stateHidden|adjustResize" />
+128-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:86:13-67
+129        <activity
+129-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:87:9-90:70
+130            android:name="com.verbosetech.weshare.activity.EditProfileActivityActivity"
+130-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:88:13-65
+131            android:screenOrientation="portrait"
+131-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:89:13-49
+132            android:windowSoftInputMode="stateHidden|adjustResize" />
+132-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:90:13-67
+133        <activity
+133-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:91:9-94:57
+134            android:name="com.verbosetech.weshare.activity.StatusActivity"
+134-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:92:13-52
+135            android:screenOrientation="portrait"
+135-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:93:13-49
+136            android:windowSoftInputMode="stateHidden" />
+136-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:94:13-54
+137        <activity
+137-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:95:9-98:57
+138            android:name="com.verbosetech.weshare.activity.MessagesActivity"
+138-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:96:13-54
+139            android:screenOrientation="portrait"
+139-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:97:13-49
+140            android:windowSoftInputMode="stateHidden" />
+140-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:98:13-54
+141        <activity
+141-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:99:9-102:57
+142            android:name="com.verbosetech.weshare.activity.BookmarksActivity"
+142-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:100:13-55
+143            android:screenOrientation="portrait"
+143-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:101:13-49
+144            android:windowSoftInputMode="stateHidden" />
+144-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:102:13-54
+145        <activity
+145-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:103:9-105:52
+146            android:name="com.verbosetech.weshare.activity.ImageViewerActivity"
+146-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:104:13-57
+147            android:screenOrientation="portrait" />
+147-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:105:13-49
+148        <activity
+148-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:106:9-109:59
+149            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+149-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:107:13-76
+150            android:screenOrientation="portrait"
+150-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:108:13-49
+151            android:theme="@style/Base.Theme.AppCompat" />
+151-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:109:13-56
+152
+153        <meta-data
+153-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:111:9-113:55
+154            android:name="com.facebook.sdk.ApplicationId"
+154-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:112:13-58
+155            android:value="@string/facebook_app_id" />
+155-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:113:13-52
+156        <meta-data
+156-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:114:9-116:70
+157            android:name="com.google.android.gms.ads.APPLICATION_ID"
+157-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:115:13-69
+158            android:value="ca-app-pub-4333945898832775~9368911725" />
+158-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:116:13-67
+159        <meta-data
+159-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:117:9-119:55
+160            android:name="com.razorpay.ApiKey"
+160-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:118:13-47
+161            android:value="rzp_live_H0Zp4A5282OyOj" />
+161-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:119:13-52
+162        <meta-data
+162-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:120:9-122:57
+163            android:name="preloaded_fonts"
+163-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:121:13-43
+164            android:resource="@array/preloaded_fonts" />
+164-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:122:13-54
+165
+166        <provider
+166-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:124:9-133:20
+167            android:name="com.verbosetech.weshare.util.MyFileProvider"
+167-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:125:13-48
+168            android:authorities="@string/authority"
+168-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:126:13-52
+169            android:exported="false"
+169-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:127:13-37
+170            android:grantUriPermissions="true" >
+170-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:128:13-47
+171            <meta-data
+171-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:130:13-132:58
+172                android:name="android.support.FILE_PROVIDER_PATHS"
+172-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:131:17-67
+173                android:resource="@xml/provider_paths" />
+173-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:132:17-55
+174        </provider>
+175
+176        <service
+176-->[com.google.firebase:firebase-database:19.2.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/62cae4562c546f97575124a716f8a454/jetified-firebase-database-19.2.1/AndroidManifest.xml:29:9-35:19
+177            android:name="com.google.firebase.components.ComponentDiscoveryService"
+177-->[com.google.firebase:firebase-database:19.2.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/62cae4562c546f97575124a716f8a454/jetified-firebase-database-19.2.1/AndroidManifest.xml:30:13-84
+178            android:directBootAware="true"
+178-->[com.google.firebase:firebase-common:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/2f884605f0ab052b2db447cb2fa13f68/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+179            android:exported="false" >
+179-->[com.google.firebase:firebase-database:19.2.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/62cae4562c546f97575124a716f8a454/jetified-firebase-database-19.2.1/AndroidManifest.xml:31:13-37
+180            <meta-data
+180-->[com.google.firebase:firebase-database:19.2.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/62cae4562c546f97575124a716f8a454/jetified-firebase-database-19.2.1/AndroidManifest.xml:32:13-34:85
+181                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+181-->[com.google.firebase:firebase-database:19.2.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/62cae4562c546f97575124a716f8a454/jetified-firebase-database-19.2.1/AndroidManifest.xml:33:17-109
+182                android:value="com.google.firebase.components.ComponentRegistrar" />
+182-->[com.google.firebase:firebase-database:19.2.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/62cae4562c546f97575124a716f8a454/jetified-firebase-database-19.2.1/AndroidManifest.xml:34:17-82
+183            <meta-data
+183-->[com.google.firebase:firebase-storage:19.1.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/10f35cf66442918d3b1f84cdd33a7833/jetified-firebase-storage-19.1.1/AndroidManifest.xml:33:13-35:85
+184                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+184-->[com.google.firebase:firebase-storage:19.1.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/10f35cf66442918d3b1f84cdd33a7833/jetified-firebase-storage-19.1.1/AndroidManifest.xml:34:17-107
+185                android:value="com.google.firebase.components.ComponentRegistrar" />
+185-->[com.google.firebase:firebase-storage:19.1.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/10f35cf66442918d3b1f84cdd33a7833/jetified-firebase-storage-19.1.1/AndroidManifest.xml:35:17-82
+186            <meta-data
+186-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:36:13-38:85
+187                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+187-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:37:17-109
+188                android:value="com.google.firebase.components.ComponentRegistrar" />
+188-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:38:17-82
+189            <meta-data
+189-->[com.google.firebase:firebase-dynamic-links:19.1.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/f7f70d82d7f19f76e771e2cf4f65c7d2/jetified-firebase-dynamic-links-19.1.0/AndroidManifest.xml:9:13-11:85
+190                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+190-->[com.google.firebase:firebase-dynamic-links:19.1.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/f7f70d82d7f19f76e771e2cf4f65c7d2/jetified-firebase-dynamic-links-19.1.0/AndroidManifest.xml:10:17-133
+191                android:value="com.google.firebase.components.ComponentRegistrar" />
+191-->[com.google.firebase:firebase-dynamic-links:19.1.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/f7f70d82d7f19f76e771e2cf4f65c7d2/jetified-firebase-dynamic-links-19.1.0/AndroidManifest.xml:11:17-82
+192            <meta-data
+192-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:32:13-34:85
+193                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+193-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:33:17-96
+194                android:value="com.google.firebase.components.ComponentRegistrar" />
+194-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:34:17-82
+195        </service>
+196
+197        <activity
+197-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:24:9-31:50
+198            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+198-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:25:13-85
+199            android:excludeFromRecents="true"
+199-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:26:13-46
+200            android:exported="true"
+200-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:27:13-36
+201            android:launchMode="singleTask"
+201-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:28:13-44
+202            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+202-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:29:13-102
+203            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+203-->[com.google.firebase:firebase-auth:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/50ff4d0bc5aa726fa34d85412e9eb012/jetified-firebase-auth-19.3.0/AndroidManifest.xml:30:13-72
+204
+205        <provider
+205-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:31:9-37:35
+206            android:name="androidx.work.impl.WorkManagerInitializer"
+206-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:32:13-69
+207            android:authorities="com.siyaram.apps.workmanager-init"
+207-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:33:13-68
+208            android:directBootAware="false"
+208-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:34:13-44
+209            android:exported="false"
+209-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:35:13-37
+210            android:multiprocess="true" />
+210-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:36:13-40
+211
+212        <service
+212-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:39:9-44:35
+213            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+213-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:40:13-88
+214            android:directBootAware="false"
+214-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:41:13-44
+215            android:enabled="@bool/enable_system_alarm_service_default"
+215-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:42:13-72
+216            android:exported="false" />
+216-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:43:13-37
+217        <service
+217-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:45:9-51:35
+218            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+218-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:46:13-84
+219            android:directBootAware="false"
+219-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:47:13-44
+220            android:enabled="@bool/enable_system_job_service_default"
+220-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:48:13-70
+221            android:exported="true"
+221-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:49:13-36
+222            android:permission="android.permission.BIND_JOB_SERVICE" />
+222-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:50:13-69
+223        <service
+223-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:52:9-57:35
+224            android:name="androidx.work.impl.foreground.SystemForegroundService"
+224-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:53:13-81
+225            android:directBootAware="false"
+225-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:54:13-44
+226            android:enabled="@bool/enable_system_foreground_service_default"
+226-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:55:13-77
+227            android:exported="false" />
+227-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:56:13-37
+228
+229        <receiver
+229-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:59:9-64:35
+230            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+230-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:60:13-88
+231            android:directBootAware="false"
+231-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:61:13-44
+232            android:enabled="true"
+232-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:62:13-35
+233            android:exported="false" />
+233-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:63:13-37
+234        <receiver
+234-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:65:9-75:20
+235            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+235-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:66:13-106
+236            android:directBootAware="false"
+236-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:67:13-44
+237            android:enabled="false"
+237-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:68:13-36
+238            android:exported="false" >
+238-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:69:13-37
+239            <intent-filter>
+239-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:71:13-74:29
+240                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+240-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:72:17-87
+240-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:72:25-84
+241                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+241-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:73:17-90
+241-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:73:25-87
+242            </intent-filter>
+243        </receiver>
+244        <receiver
+244-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:76:9-86:20
+245            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+245-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:77:13-104
+246            android:directBootAware="false"
+246-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:78:13-44
+247            android:enabled="false"
+247-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:79:13-36
+248            android:exported="false" >
+248-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:80:13-37
+249            <intent-filter>
+249-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:82:13-85:29
+250                <action android:name="android.intent.action.BATTERY_OKAY" />
+250-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:83:17-77
+250-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:83:25-74
+251                <action android:name="android.intent.action.BATTERY_LOW" />
+251-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:84:17-76
+251-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:84:25-73
+252            </intent-filter>
+253        </receiver>
+254        <receiver
+254-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:87:9-97:20
+255            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+255-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:88:13-104
+256            android:directBootAware="false"
+256-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:89:13-44
+257            android:enabled="false"
+257-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:90:13-36
+258            android:exported="false" >
+258-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:91:13-37
+259            <intent-filter>
+259-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:93:13-96:29
+260                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+260-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:94:17-83
+260-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:94:25-80
+261                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+261-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:95:17-82
+261-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:95:25-79
+262            </intent-filter>
+263        </receiver>
+264        <receiver
+264-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:98:9-107:20
+265            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+265-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:99:13-103
+266            android:directBootAware="false"
+266-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:100:13-44
+267            android:enabled="false"
+267-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:101:13-36
+268            android:exported="false" >
+268-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:102:13-37
+269            <intent-filter>
+269-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:104:13-106:29
+270                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+270-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:105:17-79
+270-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:105:25-76
+271            </intent-filter>
+272        </receiver>
+273        <receiver
+273-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:108:9-119:20
+274            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+274-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:109:13-88
+275            android:directBootAware="false"
+275-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:110:13-44
+276            android:enabled="false"
+276-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:111:13-36
+277            android:exported="false" >
+277-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:112:13-37
+278            <intent-filter>
+278-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:114:13-118:29
+279                <action android:name="android.intent.action.BOOT_COMPLETED" />
+279-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:115:17-79
+279-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:115:25-76
+280                <action android:name="android.intent.action.TIME_SET" />
+280-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:116:17-73
+280-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:116:25-70
+281                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+281-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:117:17-81
+281-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:117:25-78
+282            </intent-filter>
+283        </receiver>
+284        <receiver
+284-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:120:9-129:20
+285            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+285-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:121:13-99
+286            android:directBootAware="false"
+286-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:122:13-44
+287            android:enabled="@bool/enable_system_alarm_service_default"
+287-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:123:13-72
+288            android:exported="false" >
+288-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:124:13-37
+289            <intent-filter>
+289-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:126:13-128:29
+290                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+290-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:127:17-98
+290-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:127:25-95
+291            </intent-filter>
+292        </receiver>
+293
+294        <activity
+294-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:23:9-27:75
+295            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+295-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:24:13-93
+296            android:excludeFromRecents="true"
+296-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:25:13-46
+297            android:exported="false"
+297-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:26:13-37
+298            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+298-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:27:13-72
+299        <!--
+300            Service handling Google Sign-In user revocation. For apps that do not integrate with
+301            Google Sign-In, this service will never be started.
+302        -->
+303        <service
+303-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:33:9-36:110
+304            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+304-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:34:13-89
+305            android:exported="true"
+305-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:35:13-36
+306            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+306-->[com.google.android.gms:play-services-auth:18.0.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/03470916b26e2b81b9f48453d6e20fc3/jetified-play-services-auth-18.0.0/AndroidManifest.xml:36:13-107
+307
+308        <provider
+308-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/410f6d95fb816200321650053de5f5d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+309            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+309-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/410f6d95fb816200321650053de5f5d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+310            android:authorities="com.siyaram.apps.crashlyticsinitprovider"
+310-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/410f6d95fb816200321650053de5f5d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+311            android:exported="false"
+311-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/410f6d95fb816200321650053de5f5d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+312            android:initOrder="90" />
+312-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/410f6d95fb816200321650053de5f5d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+313
+314        <meta-data
+314-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:49:9-51:51
+315            android:name="onesignal_app_id"
+315-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:50:13-44
+316            android:value="56041d9b-b4aa-40aa-aa15-38b3ff88b79f" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+316-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:51:13-48
+317        <meta-data
+317-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:53:9-55:70
+318            android:name="onesignal_google_project_number"
+318-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:54:13-59
+319            android:value="str:REMOTE" />
+319-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:55:13-67
+320
+321        <receiver
+321-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:57:9-67:20
+322            android:name="com.onesignal.GcmBroadcastReceiver"
+322-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:58:13-62
+323            android:permission="com.google.android.c2dm.permission.SEND" >
+323-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:59:13-73
+324
+325            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+326            <intent-filter android:priority="999" >
+326-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:62:13-66:29
+326-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:62:28-50
+327                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+327-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:63:17-81
+327-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:63:25-78
+328
+329                <category android:name="com.siyaram.apps" />
+329-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:65:17-61
+329-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:65:27-58
+330            </intent-filter>
+331        </receiver>
+332        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+332-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:68:9-77
+332-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:68:19-74
+333
+334        <service android:name="com.onesignal.GcmIntentService" />
+334-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:70:9-66
+334-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:70:18-63
+335        <service
+335-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:71:9-73:72
+336            android:name="com.onesignal.GcmIntentJobService"
+336-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:72:13-61
+337            android:permission="android.permission.BIND_JOB_SERVICE" />
+337-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:73:13-69
+338        <service
+338-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:74:9-76:72
+339            android:name="com.onesignal.RestoreJobService"
+339-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:75:13-59
+340            android:permission="android.permission.BIND_JOB_SERVICE" />
+340-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:76:13-69
+341        <service
+341-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:77:9-79:72
+342            android:name="com.onesignal.RestoreKickoffJobService"
+342-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:78:13-66
+343            android:permission="android.permission.BIND_JOB_SERVICE" />
+343-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:79:13-69
+344        <service
+344-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:80:9-82:43
+345            android:name="com.onesignal.SyncService"
+345-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:81:13-53
+346            android:stopWithTask="true" />
+346-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:82:13-40
+347        <service
+347-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:83:9-85:72
+348            android:name="com.onesignal.SyncJobService"
+348-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:84:13-56
+349            android:permission="android.permission.BIND_JOB_SERVICE" />
+349-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:85:13-69
+350
+351        <activity
+351-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:87:9-89:75
+352            android:name="com.onesignal.PermissionsActivity"
+352-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:88:13-61
+353            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+353-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:89:13-72
+354
+355        <service android:name="com.onesignal.NotificationRestoreService" />
+355-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:91:9-76
+355-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:91:18-73
+356
+357        <receiver android:name="com.onesignal.BootUpReceiver" >
+357-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:93:9-98:20
+357-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:93:19-62
+358            <intent-filter>
+358-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:94:13-97:29
+359                <action android:name="android.intent.action.BOOT_COMPLETED" />
+359-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:115:17-79
+359-->[androidx.work:work-runtime:2.3.4] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/AndroidManifest.xml:115:25-76
+360                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+360-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:96:17-82
+360-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:96:25-79
+361            </intent-filter>
+362        </receiver>
+363        <receiver android:name="com.onesignal.UpgradeReceiver" >
+363-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:99:9-103:20
+363-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:99:19-63
+364            <intent-filter>
+364-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:100:13-102:29
+365                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+365-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:101:17-84
+365-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:101:25-81
+366            </intent-filter>
+367        </receiver>
+368
+369        <activity android:name="com.facebook.CustomTabMainActivity" />
+369-->[com.facebook.android:facebook-common:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/673b4b511e34641c474f6ca9126e2e07/jetified-facebook-common-5.13.0/AndroidManifest.xml:33:9-71
+369-->[com.facebook.android:facebook-common:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/673b4b511e34641c474f6ca9126e2e07/jetified-facebook-common-5.13.0/AndroidManifest.xml:33:19-68
+370
+371        <provider
+371-->[com.kbeanie:multipicker:1.6] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/672d4ca9f767df7b26103fbbb4958764/jetified-multipicker-1.6/AndroidManifest.xml:12:9-20:20
+372            android:name="com.kbeanie.multipicker.utils.AMPFileProvider"
+372-->[com.kbeanie:multipicker:1.6] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/672d4ca9f767df7b26103fbbb4958764/jetified-multipicker-1.6/AndroidManifest.xml:13:13-73
+373            android:authorities="com.siyaram.apps.multipicker.fileprovider"
+373-->[com.kbeanie:multipicker:1.6] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/672d4ca9f767df7b26103fbbb4958764/jetified-multipicker-1.6/AndroidManifest.xml:14:13-76
+374            android:exported="false"
+374-->[com.kbeanie:multipicker:1.6] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/672d4ca9f767df7b26103fbbb4958764/jetified-multipicker-1.6/AndroidManifest.xml:15:13-37
+375            android:grantUriPermissions="true" >
+375-->[com.kbeanie:multipicker:1.6] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/672d4ca9f767df7b26103fbbb4958764/jetified-multipicker-1.6/AndroidManifest.xml:16:13-47
+376            <meta-data
+376-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:130:13-132:58
+377                android:name="android.support.FILE_PROVIDER_PATHS"
+377-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:131:17-67
+378                android:resource="@xml/paths" />
+378-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:132:17-55
+379        </provider>
+380
+381        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+381-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:12:9-16:20
+381-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:12:19-63
+382            <intent-filter>
+382-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:13:13-15:29
+383                <action android:name="rzp.device_token.share" />
+383-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:14:17-65
+383-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:14:25-62
+384            </intent-filter>
+385        </receiver>
+386
+387        <activity
+387-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:18:9-29:20
+388            android:name="com.razorpay.CheckoutActivity"
+388-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:19:13-57
+389            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+389-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:20:13-83
+390            android:theme="@style/CheckoutTheme" >
+390-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:21:13-49
+391            <intent-filter>
+391-->[com.razorpay:checkout:1.5.16] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/d10e11fbb9e20e140430ff3a23ece667/jetified-checkout-1.5.16/AndroidManifest.xml:22:13-28:29
+392                <action android:name="android.intent.action.MAIN" />
+392-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:46:17-69
+392-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:46:25-66
+393
+394                <data
+394-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:37:17-75
+395                    android:host="rzp.io"
+395-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:57:21-63
+396                    android:scheme="io.rzp" />
+396-->/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/AndroidManifest.xml:37:23-72
+397            </intent-filter>
+398        </activity>
+399        <!--
+400             FirebaseMessagingService performs security checks at runtime,
+401             no need for explicit permissions despite exported="true"
+402        -->
+403        <service
+403-->[com.google.firebase:firebase-messaging:17.3.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/eba5dcfadad908965124c36a4b9b2afd/jetified-firebase-messaging-17.3.3/AndroidManifest.xml:28:9-34:19
+404            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+404-->[com.google.firebase:firebase-messaging:17.3.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/eba5dcfadad908965124c36a4b9b2afd/jetified-firebase-messaging-17.3.3/AndroidManifest.xml:29:13-82
+405            android:exported="true" >
+405-->[com.google.firebase:firebase-messaging:17.3.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/eba5dcfadad908965124c36a4b9b2afd/jetified-firebase-messaging-17.3.3/AndroidManifest.xml:30:13-36
+406            <intent-filter android:priority="-500" >
+406-->[com.google.firebase:firebase-messaging:17.3.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/eba5dcfadad908965124c36a4b9b2afd/jetified-firebase-messaging-17.3.3/AndroidManifest.xml:31:13-33:29
+406-->[com.google.firebase:firebase-messaging:17.3.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/eba5dcfadad908965124c36a4b9b2afd/jetified-firebase-messaging-17.3.3/AndroidManifest.xml:31:28-51
+407                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+407-->[com.google.firebase:firebase-messaging:17.3.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/eba5dcfadad908965124c36a4b9b2afd/jetified-firebase-messaging-17.3.3/AndroidManifest.xml:32:17-78
+407-->[com.google.firebase:firebase-messaging:17.3.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/eba5dcfadad908965124c36a4b9b2afd/jetified-firebase-messaging-17.3.3/AndroidManifest.xml:32:25-75
+408            </intent-filter>
+409        </service>
+410
+411        <receiver
+411-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:37:9-44:20
+412            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+412-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:38:13-78
+413            android:exported="true"
+413-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:39:13-36
+414            android:permission="com.google.android.c2dm.permission.SEND" >
+414-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:40:13-73
+415            <intent-filter>
+415-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:41:13-43:29
+416                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+416-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:63:17-81
+416-->[com.onesignal:OneSignal:3.13.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/0bcd2493d29d8660ce8e3913278bf7c4/jetified-OneSignal-3.13.1/AndroidManifest.xml:63:25-78
+417            </intent-filter>
+418        </receiver>
+419        <!--
+420             FirebaseInstanceIdService performs security checks at runtime,
+421             no need for explicit permissions despite exported="true"
+422        -->
+423        <service
+423-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:50:9-56:19
+424            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+424-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:51:13-77
+425            android:exported="true" >
+425-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:52:13-36
+426            <intent-filter android:priority="-500" >
+426-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:53:13-55:29
+426-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:53:28-51
+427                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+427-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:54:17-80
+427-->[com.google.firebase:firebase-iid:17.0.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/c0e433e77cd43a2c18220c19f000b429/jetified-firebase-iid-17.0.3/AndroidManifest.xml:54:25-77
+428            </intent-filter>
+429        </service>
+430
+431        <provider
+431-->[com.google.firebase:firebase-common:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/2f884605f0ab052b2db447cb2fa13f68/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+432            android:name="com.google.firebase.provider.FirebaseInitProvider"
+432-->[com.google.firebase:firebase-common:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/2f884605f0ab052b2db447cb2fa13f68/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+433            android:authorities="com.siyaram.apps.firebaseinitprovider"
+433-->[com.google.firebase:firebase-common:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/2f884605f0ab052b2db447cb2fa13f68/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+434            android:exported="false"
+434-->[com.google.firebase:firebase-common:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/2f884605f0ab052b2db447cb2fa13f68/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+435            android:initOrder="100" />
+435-->[com.google.firebase:firebase-common:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/2f884605f0ab052b2db447cb2fa13f68/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+436        <!--
+437         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+438         with the application context. This config is merged in with the host app's manifest,
+439         but there can only be one provider with the same authority activated at any given
+440         point; so if the end user has two or more different apps that use Facebook SDK, only the
+441         first one will be able to use the provider. To work around this problem, we use the
+442         following placeholder in the authority to identify each host application as if it was
+443         a completely different provider.
+444        -->
+445        <provider
+445-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:39:9-42:40
+446            android:name="com.facebook.internal.FacebookInitProvider"
+446-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:40:13-70
+447            android:authorities="com.siyaram.apps.FacebookInitProvider"
+447-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:41:13-72
+448            android:exported="false" />
+448-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:42:13-37
+449
+450        <receiver
+450-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:44:9-50:20
+451            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+451-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:45:13-86
+452            android:exported="false" >
+452-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:46:13-37
+453            <intent-filter>
+453-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:47:13-49:29
+454                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+454-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:48:17-95
+454-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:48:25-92
+455            </intent-filter>
+456        </receiver>
+457        <receiver
+457-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:51:9-58:20
+458            android:name="com.facebook.CampaignTrackingReceiver"
+458-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:52:13-65
+459            android:exported="true"
+459-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:53:13-36
+460            android:permission="android.permission.INSTALL_PACKAGES" >
+460-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:54:13-69
+461            <intent-filter>
+461-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:55:13-57:29
+462                <action android:name="com.android.vending.INSTALL_REFERRER" />
+462-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:56:17-79
+462-->[com.facebook.android:facebook-core:5.13.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/bae6dca77bf08a0eafd7a730a3eac00b/jetified-facebook-core-5.13.0/AndroidManifest.xml:56:25-76
+463            </intent-filter>
+464        </receiver>
+465
+466        <service
+466-->[androidx.room:room-runtime:2.2.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/1251a30ea96143b3dd6694a0c6e5d435/room-runtime-2.2.3/AndroidManifest.xml:25:9-27:40
+467            android:name="androidx.room.MultiInstanceInvalidationService"
+467-->[androidx.room:room-runtime:2.2.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/1251a30ea96143b3dd6694a0c6e5d435/room-runtime-2.2.3/AndroidManifest.xml:26:13-74
+468            android:exported="false" />
+468-->[androidx.room:room-runtime:2.2.3] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/1251a30ea96143b3dd6694a0c6e5d435/room-runtime-2.2.3/AndroidManifest.xml:27:13-37
+469
+470        <activity
+470-->[com.google.android.gms:play-services-base:17.1.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/1f8f446378c74773587c378f4d75e2b4/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+471            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+471-->[com.google.android.gms:play-services-base:17.1.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/1f8f446378c74773587c378f4d75e2b4/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+472            android:exported="false"
+472-->[com.google.android.gms:play-services-base:17.1.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/1f8f446378c74773587c378f4d75e2b4/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+473            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+473-->[com.google.android.gms:play-services-base:17.1.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/1f8f446378c74773587c378f4d75e2b4/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+474        <activity
+474-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:29:9-33:64
+475            android:name="com.google.android.gms.ads.AdActivity"
+475-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:30:13-65
+476            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+476-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:31:13-122
+477            android:exported="false"
+477-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:32:13-37
+478            android:theme="@android:style/Theme.Translucent" />
+478-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:33:13-61
+479
+480        <provider
+480-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:35:9-39:39
+481            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+481-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:36:13-76
+482            android:authorities="com.siyaram.apps.mobileadsinitprovider"
+482-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:37:13-73
+483            android:exported="false"
+483-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:38:13-37
+484            android:initOrder="100" />
+484-->[com.google.android.gms:play-services-ads-lite:19.3.0] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/a46074e3996eb5563ffde5ff0dbcd4b6/jetified-play-services-ads-lite-19.3.0/AndroidManifest.xml:39:13-36
+485
+486        <meta-data
+486-->[com.google.android.gms:play-services-basement:17.1.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/4725c88a5f03b6dfca4ff5c646b5b15e/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+487            android:name="com.google.android.gms.version"
+487-->[com.google.android.gms:play-services-basement:17.1.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/4725c88a5f03b6dfca4ff5c646b5b15e/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
+488            android:value="@integer/google_play_services_version" />
+488-->[com.google.android.gms:play-services-basement:17.1.1] /Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/4725c88a5f03b6dfca4ff5c646b5b15e/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
+489    </application>
+490
+491</manifest>

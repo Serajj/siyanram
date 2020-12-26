@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.verbosetech.weshare.fragment.AboutFamilyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <ScrollView
+       android:layout_width="match_parent"
+       android:id="@+id/main_sv"
+       android:visibility="gone"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="8dp"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text=" Family"
+               android:textSize="20dp"
+               android:textColor="#F32020"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:textColor="#6E6B6B"
+               android:textSize="15dp"
+               android:text="Family Type/Background"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textColor="#818080"
+               android:paddingLeft="16dp"
+               android:id="@+id/f_type"
+               android:text="Joint Family,Middle Class"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+               android:textColor="#6E6B6B"
+               android:textSize="15dp"
+               android:text="Family Income"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textColor="#818080"
+               android:paddingLeft="16dp"
+               android:id="@+id/f_income"
+               android:text="Rs 15-20 Lakh Per Annum"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+               android:textColor="#F3414040"
+               android:textSize="15dp"
+               android:text="Family Occupation"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textColor="#818080"
+               android:paddingLeft="16dp"
+               android:id="@+id/f_occupation"
+               android:text="Business/Entrepreneur"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+               android:textColor="#6E6B6B"
+               android:textSize="15dp"
+               android:text="Family Status"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textColor="#818080"
+               android:paddingLeft="16dp"
+               android:id="@+id/f_status"
+               android:text="Family Status"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+               android:textColor="#6E6B6B"
+               android:textSize="15dp"
+               android:text="Brother(s)"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textColor="#818080"
+               android:paddingLeft="16dp"
+               android:id="@+id/f_brother"
+               android:text="3 brother"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+               android:textColor="#6E6B6B"
+               android:textSize="15dp"
+               android:text="Sister(s)"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textColor="#818080"
+               android:paddingLeft="16dp"
+               android:id="@+id/f_sister"
+               android:text="2"/>
+
+
+
+
+
+       </LinearLayout>
+   </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/not_filled_rl"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Not Filled Yet."
+            android:gravity="center"
+            android:textColor="#F32020"
+            android:textFontWeight="800"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</FrameLayout>

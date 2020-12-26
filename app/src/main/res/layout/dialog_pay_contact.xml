@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="9dp"
+    android:layout_margin="3dp"
+    android:background="#00FFFFFF"
+    app:cardCornerRadius="18dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/address_card">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+919140327455"
+                android:id="@+id/phone_no"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="35dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="support@siyanram.com"
+                android:id="@+id/email_id"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:text="City,State,India"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/pay_btn_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLOSE"
+                android:paddingLeft="20dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_action_accept"
+                android:drawablePadding="-20dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

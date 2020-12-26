@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/res/values-w820dp/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "103",
+                        "endColumns": "45",
+                        "endOffsets": "144"
+                    }
+                },
+                {
+                    "source": "/Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/8905bd68f0aa41d7e8396642af0a2840/jetified-SpaceNavigationView-1.6.0/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "47",
+                        "endOffsets": "98"
+                    }
+                }
+            ]
+        }
+    ]
+}

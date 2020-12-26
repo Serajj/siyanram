@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#A8A4A4</color>
+    <color name="colorDivider">#000000</color>
+    <color name="colorTextSecondary">#0C0B0B</color>
+    <color name="black">#6A6969</color>
+    <color name="trans_black_light">#8A8888</color>
+    <color name="pink_back">#FF29B8</color>
+    <color name="colorBgLight">#FFFFFF</color>
+    <color name="blue">#304FFE</color>
+</resources>

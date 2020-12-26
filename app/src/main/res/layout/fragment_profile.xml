@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_profile_detail">
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:id="@+id/rl_img_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_person_white_72dp" />
+                <com.verbosetech.weshare.view.MontserratMediumTextView
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/userImage"/>
+                <ProgressBar
+                    android:id="@+id/profileRefreshProgress"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/fullName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="4dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/rl_img_name"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="Edit Profile"
+                    android:padding="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/angular_grey_box"
+                    android:id="@+id/fab_edit_profile"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="Setting"
+
+                    android:layout_toEndOf="@+id/fab_edit_profile"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/angular_grey_box"
+                    android:id="@+id/fab_setting"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:paddingTop="5dp"
+                android:id="@+id/countContainer"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:id="@+id/userPostsCount"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Posts"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/followerCountContainer"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/userFollowersCount"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Follower"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/followingCountContainer"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:id="@+id/userFollowingCount"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Followings"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:visibility="gone"
+        android:id="@+id/payBtns"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/ll_top"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="-24dp"
+        android:layout_toStartOf="@id/fab_bookmarks"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_bookmark_primary_dark_24dp"
+        app:fabSize="mini" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:visibility="gone"
+        android:id="@+id/fab_bookmarks"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/ll_top"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="-24dp"
+        android:layout_toStartOf="@id/f_setting"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_bookmark_primary_dark_24dp"
+        app:fabSize="mini" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/f_setting"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/ll_top"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="-10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_settings_white_24dp"
+        app:fabSize="mini" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/ll_top">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/all_courses_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/white"
+        android:background="@color/colorPrimary"
+        app:tabGravity="fill"
+        app:tabMode="fixed">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="four"
+            android:text="About Me"/>
+        <com.google.android.material.tabs.TabItem
+            android:tag="six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family"/>
+        <com.google.android.material.tabs.TabItem
+            android:tag="ctoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desired Partner"/>
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+    <!-- uncomment wheh you need user feeds
+    FrameLayout
+        android:id="@+id/profileFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top" /-->
+
+    <!--<android.support.v4.view.ViewPager--><!--android:id="@+id/activity_profile_view_pager"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent" />-->
+</RelativeLayout>

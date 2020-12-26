@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context="com.verbosetech.weshare.activity.CategoryActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/cat_ll"
+      android:orientation="vertical">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:textAlignment="center"
+          android:id="@+id/catshow"
+          android:text="Filter By"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:background="@color/colorPrimary"
+          android:gravity="center"
+          android:textSize="22sp"
+          android:layout_gravity="center"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"/>
+
+  </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cat_ll"
+        tools:listitem="@layout/filtered_user_by_cat"
+        android:id="@+id/cat_rv"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/not_found_rl"
+        android:layout_height="match_parent"
+        android:background="@drawable/sorry_not_found"
+        android:layout_below="@+id/cat_ll">
+
+
+    </RelativeLayout>
+</RelativeLayout>

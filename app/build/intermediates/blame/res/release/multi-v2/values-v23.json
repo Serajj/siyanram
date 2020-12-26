@@ -1,0 +1,93 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v23/values-v23.xml",
+            "map": [
+                {
+                    "source": "/Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/ed1ddee3e60b698ede788975dad8034b/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "51",
+                        "startColumns": "4",
+                        "startOffsets": "3582",
+                        "endLines": "53",
+                        "endColumns": "12",
+                        "endOffsets": "3727"
+                    }
+                },
+                {
+                    "source": "/Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/7bbc12bea78a26e12949d4a72c0aa162/material-1.2.0-alpha03/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,320",
+                        "endLines": "5,9",
+                        "endColumns": "10,10",
+                        "endOffsets": "315,588"
+                    },
+                    "to": {
+                        "startLines": "54,58",
+                        "startColumns": "4,4",
+                        "startOffsets": "3732,3997",
+                        "endLines": "57,61",
+                        "endColumns": "10,10",
+                        "endOffsets": "3992,4265"
+                    }
+                },
+                {
+                    "source": "/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/src/main/res/values-v23/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "184",
+                        "endColumns": "45",
+                        "endOffsets": "225"
+                    }
+                },
+                {
+                    "source": "/Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/24b5cc537ea533233bce8b41d5ea1314/work-runtime-2.3.4/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
+                    }
+                },
+                {
+                    "source": "/Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/249d93e5da25c1cc491739d1f2a92fe9/appcompat-1.1.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2618,2842,2957,3064,3177",
+                        "endLines": "2,3,4,5,19,33,34,35,36,40,41,42,43,47",
+                        "endColumns": "134,134,74,86,12,12,118,126,104,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2613,2837,2952,3059,3172,3402"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,9,23,37,38,39,40,44,45,46,47",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "230,365,500,575,662,1546,2442,2561,2688,2793,3017,3132,3239,3352",
+                        "endLines": "5,6,7,8,22,36,37,38,39,43,44,45,46,50",
+                        "endColumns": "134,134,74,86,12,12,118,126,104,12,114,106,112,12",
+                        "endOffsets": "360,495,570,657,1541,2437,2556,2683,2788,3012,3127,3234,3347,3577"
+                    }
+                }
+            ]
+        }
+    ]
+}

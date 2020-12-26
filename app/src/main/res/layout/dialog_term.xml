@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tern_and_cond"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/term_acceptBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agree"
+            android:paddingLeft="20dp"
+            android:background="@drawable/hover"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_action_accept"
+            android:drawablePadding="-20dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

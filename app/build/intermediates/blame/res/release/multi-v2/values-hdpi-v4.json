@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/8905bd68f0aa41d7e8396642af0a2840/jetified-SpaceNavigationView-1.6.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "47",
+                        "endOffsets": "98"
+                    }
+                },
+                {
+                    "source": "/Users/serajalam/Documents/Demo/caches/transforms-2/files-2.1/249d93e5da25c1cc491739d1f2a92fe9/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "103",
+                        "endLines": "7",
+                        "endColumns": "13",
+                        "endOffsets": "375"
+                    }
+                }
+            ]
+        }
+    ]
+}

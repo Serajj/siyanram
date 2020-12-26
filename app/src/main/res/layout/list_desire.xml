@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_desire">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desire Partener"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <ImageButton
+            android:id="@+id/edit_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_edit"
+            android:background="#00FFFFFF"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="16dp">
+
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="He Should be"
+            android:textColor="#ffffff" />
+
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/heshouldbe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <!--DOB-->
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="Age of around"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/ageofaround"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <!--FathersName-->
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="Martial Status"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/martialstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <!--MotherName-->
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="Challenged"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/challenged"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+        <!--occupation-->
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="Religion"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/religion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <!--City-->
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="Mother Tounge"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/mothertounge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <!--state-->
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="Caste"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/caste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="City"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/dcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="Country"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/dcountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="5dp"
+            android:text="Education"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/deducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+           
+            android:hint=""
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

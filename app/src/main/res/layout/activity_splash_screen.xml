@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_second"
+    tools:context=".activity.SplashScreenActivity">
+
+    <LinearLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:src="@drawable/we_share_logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/authOptionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/login_back"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendotpLayout"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter mobile"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:id="@+id/cust_phone"
+                />
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/btnback"
+                android:text="Send OTP"
+                android:elevation="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/send_otp_btn"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterotpLayout"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter OTP"
+                android:inputType="number"
+                android:id="@+id/cust_otp"
+                />
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:elevation="20dp"
+                android:text="Verify"
+                android:id="@+id/submit_otp_btn"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:text="@string/continue_with"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/login_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="12dp"
+                facebook:com_facebook_login_text="Facebook" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_sign_in_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/authProgress"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</FrameLayout>

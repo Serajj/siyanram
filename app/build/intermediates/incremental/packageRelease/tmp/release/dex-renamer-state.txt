@@ -1,0 +1,7 @@
+#Mon Dec 07 14:01:57 IST 2020
+base.0=/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/build/intermediates/dex/release/out/classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/serajalam/Documents/Android-Apps/Rishab_Projects/WeShare_App/app/build/intermediates/dex/release/out/classes2.dex

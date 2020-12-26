@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.verbosetech.weshare.activity.AddDetailActivity">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_above="@+id/update_btn"
+      android:paddingBottom="10dp"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+          <!--About me-->
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:id="@+id/about_rl"
+              android:visibility="gone"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="16dp">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="About youself"
+                          android:id="@+id/laay"
+                          android:textColor="@color/colorText" />
+
+                      <EditText
+                          android:id="@+id/a_about"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="16dp"
+                          android:layout_below="@+id/laay"
+                          android:backgroundTint="#00000000"
+                          android:hint=""
+                          android:inputType="text"
+                          android:textColor="#000000"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Religion"
+                          android:id="@+id/lar"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/a_religion"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lar"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Caste"
+                          android:id="@+id/lac"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/a_caste"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lac"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Self Gotra"
+                          android:id="@+id/lasg"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/a_sgotra"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lasg"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Mama Gotra"
+                          android:id="@+id/lamg"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/a_mgotra"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lamg"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Nani Gotra"
+                          android:id="@+id/lang"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/a_ngotra"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lang"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Manglik"
+                          android:id="@+id/lamglk"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/a_manglik"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lamglk"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Martial Status"
+                          android:id="@+id/lams"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/a_martial_status"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lams"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Height"
+                          android:id="@+id/lah"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/height"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lah"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Mother Tounge"
+                          android:id="@+id/lamt"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/mother_tounge"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lamt"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Complexion"
+                          android:id="@+id/lacmp"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/complexion"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lacmp"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Body Type"
+                          android:id="@+id/labt"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/body_type"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/labt"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Profile Managed For"
+                          android:id="@+id/lapm"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/profilr_managed_by"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lapm"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+              </LinearLayout>
+          </RelativeLayout>
+          <!--family me-->
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:id="@+id/family_rl"
+              android:visibility="gone"
+              android:layout_height="wrap_content">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="16dp">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Family Type"
+                          android:id="@+id/lft"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/ftype"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lft"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_marginTop="6dp"
+                     android:paddingBottom="2dp"
+                     android:layout_height="75dp">
+                     <TextView
+                         android:textStyle="bold"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="16dp"
+                         android:backgroundTint="#00000000"
+                         android:text="Family Values"
+                         android:id="@+id/fvalueLabel"
+                         android:textColor="@color/colorText" />
+
+                     <Spinner
+                         android:id="@+id/fvalue"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_below="@+id/fvalueLabel"
+                         android:layout_marginStart="16dp"
+                         android:scrollIndicators="end"
+                         />
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="2dp"
+                         android:layout_alignParentBottom="true"
+                         android:background="#000000"/>
+                 </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Family Status"
+                          android:id="@+id/lfs"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/fstatus"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lfs"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Family Income (Annual)"
+                          android:id="@+id/lfi"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/fincome"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lfi"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Family Occupation"
+                          android:id="@+id/lfo"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/foccupation"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lfo"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Brother(s)"
+                          android:id="@+id/lfb"
+                          android:textColor="@color/colorText" />
+
+                      <EditText
+                          android:id="@+id/brother"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="16dp"
+                          android:layout_below="@+id/lfb"
+                          android:backgroundTint="#00000000"
+                          android:hint=""
+                          android:inputType="number"
+                          android:textColor="#000000"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Sister(s)"
+                          android:id="@+id/lfss"
+                          android:textColor="@color/colorText" />
+
+                      <EditText
+                          android:id="@+id/sister"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="16dp"
+                          android:layout_below="@+id/lfss"
+                          android:backgroundTint="#00000000"
+                          android:hint=""
+                          android:inputType="number"
+                          android:textColor="#000000"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+              </LinearLayout>
+          </RelativeLayout>
+
+          <!--education me-->
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:id="@+id/education_rl"
+              android:visibility="gone"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="16dp">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Highest Education"
+                          android:id="@+id/leh"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/heducation"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/leh"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="UG Degree"
+                          android:id="@+id/leugd"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/ugdegree"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/leugd"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="UG College"
+                          android:id="@+id/leugc"
+                          android:textColor="@color/colorText" />
+
+                      <EditText
+                          android:id="@+id/ugcollege"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="16dp"
+                          android:layout_below="@+id/leugc"
+                          android:backgroundTint="#00000000"
+                          android:hint=""
+                          android:inputType="textCapSentences"
+                          android:textColor="#000000"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="PG Degree"
+                          android:id="@+id/lepgd"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/pgdegree"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/lepgd"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="PG College"
+                          android:id="@+id/lepgc"
+                          android:textColor="@color/colorText" />
+
+                      <EditText
+                          android:id="@+id/pgcollege"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="16dp"
+                          android:layout_below="@+id/lepgc"
+                          android:backgroundTint="#00000000"
+                          android:hint=""
+                          android:inputType="textCapSentences"
+                          android:textColor="#000000"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Other Qualifications"
+                          android:id="@+id/leoq"
+                          android:textColor="@color/colorText" />
+
+                      <EditText
+                          android:id="@+id/highestqualification"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="16dp"
+                          android:layout_below="@+id/leoq"
+                          android:backgroundTint="#00000000"
+                          android:hint=""
+                          android:inputType="number"
+                          android:textColor="#000000"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Employed In"
+                          android:id="@+id/leei"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/employedin"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/leei"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Annual Income(Self)"
+                          android:id="@+id/leai"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/annualincome"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/leai"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+
+              </LinearLayout>
+          </RelativeLayout>
+          <!--desire me-->
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:id="@+id/derire_rl"
+              android:visibility="gone"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="16dp">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="He/She should be"
+                          android:id="@+id/ldhsb"
+                          android:textColor="@color/colorText" />
+
+                      <EditText
+                          android:id="@+id/heshouldbe"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="16dp"
+                          android:layout_below="@+id/ldhsb"
+                          android:backgroundTint="#00000000"
+                          android:hint=""
+                          android:inputType="textCapSentences"
+                          android:textColor="#000000"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Age of around"
+                          android:id="@+id/ldaa"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/ageofaround"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/ldaa"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Martial Status"
+                          android:id="@+id/ldms"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/martialstatus"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/ldms"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Challenged"
+                          android:id="@+id/ldc"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/challenged"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/ldc"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Religion"
+                          android:id="@+id/ldr"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/religion"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/ldr"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Mother Tounge"
+                          android:id="@+id/ldmt"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/mothertounge"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/ldmt"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Caste"
+                          android:id="@+id/ldca"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/caste"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/ldca"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="City"
+                          android:id="@+id/ldct"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/dcity"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/ldct"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="State"
+                          android:id="@+id/ldst"
+                          android:textColor="@color/colorText" />
+
+                      <Spinner
+                          android:id="@+id/dcountry"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_below="@+id/ldst"
+                          android:layout_marginStart="16dp"
+                          android:scrollIndicators="end"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:paddingBottom="2dp"
+                      android:layout_height="75dp">
+                      <TextView
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="16dp"
+                          android:backgroundTint="#00000000"
+                          android:layout_alignParentTop="true"
+                          android:text="Education"
+                          android:id="@+id/lded"
+                          android:textColor="@color/colorText" />
+
+                      <EditText
+                          android:id="@+id/deducation"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginStart="16dp"
+                          android:layout_below="@+id/lded"
+                          android:backgroundTint="#00000000"
+                          android:hint=""
+                          android:inputType="textCapSentences"
+                          android:textColor="#000000"
+                          />
+                      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="2dp"
+                          android:layout_alignParentBottom="true"
+                          android:background="#000000"/>
+                  </RelativeLayout>
+
+              </LinearLayout>
+          </RelativeLayout>
+
+      </LinearLayout>
+  </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:id="@+id/update_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Update"/>
+
+</RelativeLayout>

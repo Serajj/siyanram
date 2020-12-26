@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.verbosetech.weshare.fragment.DesiredPartnerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:id="@+id/main_sv"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Partner"
+                android:textSize="20dp"
+                android:textColor="#F32020"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F3414040"
+                
+                android:text="He/She Should be"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/he_should_be"
+                android:text="5'0 to 5'9"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#F3414040"
+                android:id="@+id/age_of_around"
+                android:text="Age of arround"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/d_age"
+                android:text="23 to 32"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#F3414040"
+                
+                android:text="Marital status"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/martial_status"
+                android:text="Never Married"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#F3414040"
+                
+                android:text="Religion"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/d_religion"
+                android:text="Muslim"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#F3414040"
+                
+                android:text="Mother Tongue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/mother_tounge"
+                android:text="Hindi-UP/UK,Hindi-Delhi,Hindi-MP"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#F3414040"
+                
+                android:text="Caste"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/d_caste"
+                android:text="Sunni"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#F3414040"
+
+                android:text="Challeged"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/d_challenged"
+                android:text="No"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#F3414040"
+                
+                android:text="City"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:id="@+id/d_city"
+                android:textColor="#818080"
+                
+                android:text="Faizabad Lucknow,Barabani,Kannpur,Unnao,New Delhi"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#F3414040"
+                
+                android:text="Country"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/d_country"
+                android:text="India"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:textColor="#F3414040"
+                android:text="Education"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="16dp"
+                android:textColor="#818080"
+                android:id="@+id/d_earning"
+                android:text="B.tech"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/not_filled_rl"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Not Filled Yet."
+            android:gravity="center"
+            android:textColor="#F32020"
+            android:textFontWeight="800"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</FrameLayout>

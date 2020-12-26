@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pink_back"
+    android:clickable="true"
+    android:gravity="center"
+    android:paddingTop="2dp"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_tab1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/home_tab"
+            android:src="@drawable/ic_icon_home" />
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_tab2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/home_tab"
+            android:src="@drawable/ic_icon_tren" />
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Trending"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:gravity="center"
+       android:layout_marginBottom="1dp"
+       android:background="@drawable/rectangular_corner"
+       android:layout_height="40dp">
+       <LinearLayout
+           android:id="@+id/bottom_bar_tab3"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:contentDescription="@string/home_tab"
+               android:src="@drawable/ic_add_circle" />
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_tab4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/home_tab"
+            android:src="@drawable/ic_icon_notification" />
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/notification"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_tab5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/home_tab"
+            android:src="@drawable/ic_icon_profile" />
+
+        <com.verbosetech.weshare.view.MontserratTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/profile"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Values from default config. -->
+    <string name="app_name" translatable="false">SiyaNRam</string>
+    <string name="authority" translatable="false">com.siyaram.apps.fileprovider</string>
+
+    <color name="colorAccent">#8E24AA</color>
+    <color name="colorPrimary">#8E24AA</color>
+    <color name="colorPrimaryDark">#8E24AA</color>
+
+    <string name="dynamic_link_domain" translatable="false"></string>
+    <string name="facebook_app_id" translatable="false">717432922324662</string>
+    <string name="fb_login_protocol_scheme" translatable="false">b721b0b3d283e0d8aaf41d52c2d10688</string>
+    <string name="support_email" translatable="false">siyaram@test.com</string>
+    <string name="web_client_id" translatable="false">153296611660-od06q4qlvjejh6ikcurbme1d2jc5c4vq.apps.googleusercontent.com</string>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.verbosetech.weshare.activity.EditOptionActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/info_update"
+       android:layout_height="80dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:textSize="22sp"
+           android:padding="10dp"
+           android:text="Update Info"/>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_forward"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:padding="10dp"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="3dp"
+           android:layout_alignParentBottom="true"
+           android:background="#8F8D8D"/>
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/update_about"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:text="Update About"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#8F8D8D"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/update_family"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:text="Update Family"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#8F8D8D"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/update_edu"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:text="Update Education"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#8F8D8D"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/update_desire"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:text="Update Partner Preferences"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#8F8D8D"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

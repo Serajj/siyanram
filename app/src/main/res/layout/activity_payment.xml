@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.verbosetech.weshare.activity.PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/profile_ll"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textSize="55dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You can only view/create post and profile \nif you make one time payment.."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="100dp"
+            android:textSize="22dp"
+            android:padding="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One Time Payment"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payAmt"
+            android:text="200 INR"
+            android:textSize="80dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/contact_ll"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textSize="55dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please pay to view contact details"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="100dp"
+            android:textSize="22dp"
+            android:padding="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For Per User Address"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pay"
+            android:text="20 INR"
+            android:textSize="80dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pay NOW"
+        android:textColor="@color/white"
+        android:background="#AA00FF"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/payBtn"/>
+
+</RelativeLayout>
